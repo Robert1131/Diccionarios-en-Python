@@ -1,0 +1,24 @@
+# Crear un diccionario con información personal
+informacion_personal = {
+    "nombre": "Robert Reyes",
+    "edad": 38,  # Edad actual
+    "ciudad": "La Libertad",  # Ciudad de residencia
+    "profesion": "Ingeniero"  # Profesión (puedes cambiarla si deseas)
+}
+
+# Acceder al valor asociado con la clave "ciudad" y modificarlo
+print(f"Ciudad original: {informacion_personal['ciudad']}")
+informacion_personal["ciudad"] = "Guayaquil"  # Modificando la ciudad
+print(f"Ciudad modificada: {informacion_personal['ciudad']}")
+
+# Agregar una nueva clave-valor para el "telefono"
+if "telefono" not in informacion_personal:  # Verificar existencia de la clave
+    informacion_personal["telefono"] = "0997259998"  # Agregar tu número de teléfono
+
+# Eliminar la clave "edad"
+if "edad" in informacion_personal:  # Verificar existencia antes de eliminar
+    del informacion_personal["edad"]  # Eliminar la clave "edad"
+
+# Imprimir el diccionario final
+print("Diccionario final:")
+print(informacion_personal)
